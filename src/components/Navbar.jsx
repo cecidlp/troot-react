@@ -5,10 +5,10 @@ import { BrowserRouter as Router, Link } from "react-router-dom";
 
 const Navbar = () => {
     const [activeLink, setActiveLink] = useState('home');
-    const [Nav, setNav] = useState(false);
+    const [nav, setNav] = useState(false);
 
     const handleNav = () => {
-        setNav(!Nav);
+        setNav(!nav);
     };
 
     const onUpdateActiveLink = (value) => {
@@ -40,21 +40,10 @@ const Navbar = () => {
                     </li>
                 </ul>
                 <div onClick={handleNav} className="block md:hidden">
-                    {!Nav ? (
-                        <AiOutlineClose fill="#E5E2DB" size={20} />
-                    ) : (
-                        <AiOutlineMenu fill="#E5E2DB" size={20} />
-                    )}
+                    {nav ? <AiOutlineClose fill="#E5E2DB" size={20} /> : <AiOutlineMenu fill="#E5E2DB" size={20} />}
                 </div>
-                <div
-                    className={
-                        !Nav
-                            ? "fixed left-0 top-0 w-[50%] h-full border-r border-r-gray-900 bg-[#5B726C] ease-in-out duration-500"
-                            : "fixed left-[-100%] "
-                    }
-                >
+                <ul className={nav ? "fixed left-0 top-0 w-[50%] h-full border-r border-r-gray-900 bg-[#5B726C] ease-in-out duration-500" : "ease-in-out duration-500 fixed left-[-100%]"}>
                     <h1 className="w-full text-3xl font-light text-[#E5E2DB] m-8">Troot</h1>
-                    <ul className="p-4">
                         <li className="p-4 border-b border-gray-400 font-weight: 400">
                             <Link to="/servicios" className={`text-[#E5E2DB] ${activeLink === 'servicios' ? 'active' : ''} navbar-link`}>
                                 SERVICIOS
@@ -73,8 +62,7 @@ const Navbar = () => {
                         <li className="p-4 ">
                             <TfiWorld fill="#E5E2DB" />
                         </li>
-                    </ul>
-                </div>
+                </ul>
             </div>
         </Router>
     );
