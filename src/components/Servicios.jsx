@@ -35,7 +35,7 @@ function Servicios() {
         }
     ]
     return (
-        <div>
+        <div id="servicios">
             <h2 className='title-h2 py-[2rem] md:text-[2.5rem] xl:text-[3.5rem] '>¿Qué ofrecemos?</h2>
             {descripcionServicios.map((card) => (<Descripcion key={card.id} number={card.id} title={card.title} text={card.text} />))}
         </div>

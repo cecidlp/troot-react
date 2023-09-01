@@ -19,7 +19,7 @@ const Navbar = () => {
                         </a>
                     </li>
                     <li className="p-4 pr-10">
-                        <a href="/servicios" className="text-[#E5E2DB]">
+                        <a href="#servicios" className="text-[#E5E2DB]">
                             Servicios
                         </a>
                     </li>
@@ -38,12 +38,12 @@ const Navbar = () => {
                 <ul className={nav ? "fixed left-0 top-0 w-[50%] h-full border-r border-r-gray-900 bg-[#5B726C] ease-in-out duration-500 z-20" : "ease-in-out duration-500 fixed left-[-100%] "}>
                     <h1 className="w-full text-3xl font-light text-[#E5E2DB] m-8">Troot</h1>
                         <li className="p-4 border-b border-gray-400 font-weight: 400">
-                            <a href="/team" className="text-[#E5E2DB]">
+                            <a href="#team" className="text-[#E5E2DB]">
                                 EQUIPO
                             </a>
                         </li>
                         <li className="p-4 border-b border-gray-400">
-                            <a href="/services" className="text-[#E5E2DB]">
+                            <a href="#services" className="text-[#E5E2DB]">
                                 SERVICIOS
                             </a>
                         </li>
