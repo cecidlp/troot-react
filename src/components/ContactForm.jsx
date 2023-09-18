@@ -51,30 +51,30 @@ const ContactForm = () => {
       }; */
 
   return (
-    <section className="contact flex items-center px-20 py-12 justify-between" id="connect">
-      <div class="py-8 lg:py-16 px-4 max-w-screen-md">
-        <h2 class="md:text-[2.5rem] xl:text-[3.5rem] text-[#5C3671] text-[1.5rem] font-[600]">Contactanos</h2>
-        <p class="mb-8 lg:mb-16 font-light text-gray-500 sm:text-xl">¿No encontrás lo que buscás o tenés alguna duda? <br/> Escribinos y te responderemos a la brevedad</p>
+    <section className="contact flex flex-col lg:flex-row items-center px-6 md:px-10 py-6 lg:px-24 lg:justify-between lg:gap-16" id="connect">
+      <div class="py-4 lg:py-16 w-[100%] text-center lg:text-left">
+        <h2 class="md:text-[2.5rem] xl:text-[3.5rem] text-[#5C3671] text-[1.5rem] font-[600] pb-4">Contactanos</h2>
+        <p class="text-p mb-5 md:text-[1rem] lg:text-[1.1rem] xl:text-[1.3rem] lg:mb-16 font-light text-gray-500 sm:text-xl">¿No encontrás lo que buscás o tenés alguna duda? <br/> Escribinos y te responderemos a la brevedad</p>
       </div>
-      <div className="w-[50%]">
+      <div className="w-[100%]">
         <form action="#" class="space-y-8">
           <div>
-            <label for="name" class="block mb-2 text-m font-medium text-[#3C3B39] ">Tu nombre</label>
-            <input type="text" id="name" class="shadow-sm bg-gray-50 border border-gray-300 text-[#3C3B39] text-sm rounded-lg focus:ring-ring-color focus:border-secondary block w-full p-3.5" placeholder="Pepe Argento" required />
+            <label for="name" class="block mb-2 text-p font-medium text-[#3C3B39] md:text-[1rem] lg:text-[1.1rem] xl:text-[1.3rem] ">Tu nombre</label>
+            <input type="text" id="name" class="shadow-sm bg-gray-50 border border-gray-300 text-[#3C3B39] text-p rounded-lg focus:ring-ring-color focus:border-secondary block w-full p-3.5 md:text-[1rem] lg:text-[1.1rem] xl:text-[1.3rem] font-light" placeholder="Pepe Argento" required />
           </div>
           <div>
-            <label for="email" class="block mb-2 text-m font-medium text-[#3C3B39] ">Tu email</label>
-            <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-[#3C3B39] text-sm rounded-lg focus:ring-ring-color focus:border-secondary block w-full p-3.5 " placeholder="tunombre@gmail.com" required />
+            <label for="email" class="block mb-2 text-p font-medium text-[#3C3B39] md:text-[1rem] lg:text-[1.1rem] xl:text-[1.3rem]">Tu email</label>
+            <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-[#3C3B39] text-p rounded-lg focus:ring-ring-color focus:border-secondary block w-full p-3.5 md:text-[1rem] lg:text-[1.1rem] xl:text-[1.3rem] font-light " placeholder="tunombre@gmail.com" required />
           </div>
           <div>
-            <label for="subject" class="block mb-2 text-m font-medium text-[#3C3B39] ">Asunto</label>
-            <input type="text" id="subject" class="block p-3.5 w-full text-sm text-[#3C3B39] bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-ring-color focus:border-secondary" placeholder="¿En qué te podemos ayudar?" required />
+            <label for="subject" class="block mb-2 text-p font-medium text-[#3C3B39] md:text-[1rem] lg:text-[1.1rem] xl:text-[1.3rem]">Asunto</label>
+            <input type="text" id="subject" class="block p-3.5 w-full text-p  text-[#3C3B39] bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-ring-color focus:border-secondary md:text-[1rem] lg:text-[1.1rem] xl:text-[1.3rem] font-light" placeholder="¿En qué te podemos ayudar?" required />
           </div>
           <div class="sm:col-span-2">
-            <label for="message" class="block mb-2 text-m font-medium text-[#3C3B39] ">Tu mensaje</label>
-            <textarea id="message" rows="6" class="block p-3.5 w-full text-sm text-[#3C3B39]  bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-ring-color focus:border-secondary" placeholder="Escribí tu mensaje"></textarea>
+            <label for="message" class="block mb-2 text-p font-medium text-[#3C3B39] md:text-[1rem] lg:text-[1.1rem] xl:text-[1.3rem]">Tu mensaje</label>
+            <textarea id="message" rows="6" class="block p-3.5 w-full text-p  text-[#3C3B39]  bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-ring-color focus:border-secondary md:text-[1rem] lg:text-[1.1rem] xl:text-[1.3rem] font-light" placeholder="Escribí tu mensaje"></textarea>
           </div>
-          <button type="submit" class="py-3 px-5 text-m font-medium text-center text-white rounded-lg bg-[#5B726C] sm:w-fit  focus:ring-4 focus:outline-none">Send message</button>
+          <button type="submit" class="py-3 px-5 font-medium text-center text-white rounded-lg bg-[#5B726C] sm:w-fit  focus:ring-4 focus:outline-none ">Enviar</button>
         </form>
       </div>
 

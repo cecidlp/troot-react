@@ -6,6 +6,7 @@ import ProyectosEntregados from './components/ProyectosEntregados'
 import Team from './components/Team'
 import Servicios from './components/Servicios'
 import ContactForm from './components/ContactForm'
+import Footer from './components/Footer'
 
 function index() {
   return (
@@ -17,6 +18,7 @@ function index() {
      <Team/>
      <Servicios/>
      <ContactForm/>
+     <Footer/>
     </div>
   )
 }
