@@ -1,6 +1,6 @@
 import React from 'react'
 import Julieta from "../assets/Julieta.jpg"
-import Paula from "../assets/Paula.jpg"
+import Paula from "../assets/Paula2.jpg"
 import '../index.css'
 
 function Team() {
