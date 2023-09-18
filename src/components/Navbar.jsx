@@ -24,7 +24,7 @@ const Navbar = () => {
                         </a>
                     </li>
                     <li className="p-4 pr-10">
-                        <a href="/contacto" className="text-[#E5E2DB]">
+                        <a href="#contacto" className="text-[#E5E2DB]">
                             Contacto
                         </a>
                     </li>

@@ -51,7 +51,7 @@ const ContactForm = () => {
       }; */
 
   return (
-    <section className="contact flex flex-col lg:flex-row items-center px-6 md:px-10 py-6 lg:px-24 lg:justify-between lg:gap-16" id="connect">
+    <section className="contact flex flex-col lg:flex-row items-center px-6 md:px-10 py-6 lg:px-24 lg:justify-between lg:gap-16" id="contacto">
       <div class="py-4 lg:py-16 w-[100%] text-center lg:text-left">
         <h2 class="md:text-[2.5rem] xl:text-[3.5rem] text-[#5C3671] text-[1.5rem] font-[600] pb-4">Contactanos</h2>
         <p class="text-p mb-5 md:text-[1rem] lg:text-[1.1rem] xl:text-[1.3rem] lg:mb-16 text-gray-500 ">¿No encontrás lo que buscás o tenés alguna duda? <br/> Escribinos y te responderemos a la brevedad</p>
