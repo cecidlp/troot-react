@@ -35,24 +35,27 @@ const Navbar = () => {
                 <div onClick={handleNav} className="block md:hidden">
                     {nav ? <AiOutlineClose fill="#E5E2DB" size={20} /> : <AiOutlineMenu fill="#E5E2DB" size={20} />}
                 </div>
-                <ul className={nav ? "fixed left-0 top-0 w-[50%] h-full border-r border-r-gray-900 bg-[#5B726C] ease-in-out duration-500 z-20" : "ease-in-out duration-500 fixed left-[-100%] "}>
-                    <h1 className="w-full text-3xl font-light text-[#E5E2DB] m-8">Troot</h1>
-                        <li className="p-4 border-b border-gray-400 font-weight: 400">
+                <ul className={nav ? "fixed left-0 top-0 pt-10 w-[100%] h-[55%] border-r rounded-b-[30px] border-r-gray-900 bg-[#5B726C] ease-in-out duration-500 z-20" : "ease-in-out duration-500 fixed top-[-100%] "}>
+                    <div onClick={handleNav} className="flex items-center px-6">
+                        <h1 className="w-full text-2xl  py-6 font-light text-[#E5E2DB]">Troot</h1>
+                        <AiOutlineClose fill="#E5E2DB" size={20} />
+                    </div>  
+                        <li className="px-6 py-6 border-b border-gray-400 font-weight: 400">
                             <a href="#team" className="text-[#E5E2DB]">
                                 EQUIPO
                             </a>
                         </li>
-                        <li className="p-4 border-b border-gray-400">
-                            <a href="#services" className="text-[#E5E2DB]">
+                        <li className="px-6 py-6 border-b border-gray-400">
+                            <a href="#servicios" className="text-[#E5E2DB]">
                                 SERVICIOS
                             </a>
                         </li>
-                        <li className="p-4 border-b border-gray-400">
+                        <li className="px-6 py-6 border-b border-gray-400">
                             <a href="/contacto" className="text-[#E5E2DB]">
                                 CONTACTO
                             </a>
                         </li>
-                        <li className="p-4 ">
+                        <li className="px-6 py-6">
                             <TfiWorld fill="#E5E2DB" />
                         </li>
                 </ul>

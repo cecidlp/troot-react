@@ -6,6 +6,12 @@ export default {
   ],
   theme: {
     extend: {
+      borderColor: {
+        "secondary": "#5C3671",
+      },
+      colors:{
+        'ring-color': "#5C3671",
+      },
       fontFamily: {
         'Manrope': ['Manrope', 'sans-serif']
       },

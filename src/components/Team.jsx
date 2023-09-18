@@ -5,11 +5,11 @@ import '../index.css'
 
 function Team() {
   return (
-    <div className='mx-auto px-6' id="team">
+    <div className='mx-auto px-6 py-16' id="team">
         <h2 className='title-h2 md:text-[2.5rem] xl:text-[3.5rem] '>
             Nuestro equipo
         </h2>
-        <div className='text-center flex flex-col items-center pt-9 lg:flex-row lg:justify-evenly lg:pt-10'>
+        <div className='text-center flex flex-col items-center pt-16 lg:flex-row lg:justify-evenly lg:pt-16'>
             <div className='pb-7'>
                 <img src={Julieta} alt="Julieta Rocca" className='w-[50vw] h-[28vh] rounded-3xl object-cover lg:w-[30vw] lg:h-[40vh]'>
                 </img>

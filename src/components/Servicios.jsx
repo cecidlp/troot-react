@@ -35,8 +35,8 @@ function Servicios() {
         }
     ]
     return (
-        <div id="servicios">
-            <h2 className='title-h2 py-[2rem] md:text-[2.5rem] xl:text-[3.5rem] '>¿Qué ofrecemos?</h2>
+        <div id="servicios" className='pt-12 py-16'>
+            <h2 className='title-h2 pb-16 md:text-[2.5rem] xl:text-[3.5rem] '>¿Qué ofrecemos?</h2>
             {descripcionServicios.map((card) => (<Descripcion key={card.id} number={card.id} title={card.title} text={card.text} />))}
         </div>
     )
@@ -47,7 +47,7 @@ export default Servicios
 
 export function Descripcion({ number, title, text }) {
     return (
-        <div className='flex flex-row w-[88%] py-5 mx-auto border-t border-gray-400'>
+        <div className='flex flex-row w-[88%] py-7 mx-auto border-t border-gray-400'>
             <span className='text-[#3C3B39] text-[0.9rem] pr-[1rem] md:text-[1rem]  lg:text-[1.1rem] xl:text-[1.3rem]'>(0{number})</span>
             <div>
                 <h4 className='title-h4 md:text-[1.1rem] lg:text-[1.4rem] xl:text-[1.5rem]'>{title}</h4>
