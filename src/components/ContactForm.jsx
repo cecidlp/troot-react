@@ -1,6 +1,8 @@
 import { useState } from "react";
+import { useGlobalContext } from '../GlobalContextProvider'
 
 const ContactForm = () => {
+  const { isSpanish } = useGlobalContext();
   /*   const formInitialDetails = {
       name: '',
       email: '',
@@ -52,29 +54,29 @@ const ContactForm = () => {
 
   return (
     <section className="contact flex flex-col lg:flex-row items-center px-6 md:px-10 py-6 lg:px-24 lg:justify-between lg:gap-16" id="contacto">
-      <div class="py-4 lg:py-16 w-[100%] text-center lg:text-left">
-        <h2 class="md:text-[2.5rem] xl:text-[3.5rem] text-[#5C3671] text-[1.5rem] font-[600] pb-4">Contactanos</h2>
-        <p class="text-p mb-5 md:text-[1rem] lg:text-[1.1rem] xl:text-[1.3rem] lg:mb-16 text-gray-500 ">¿No encontrás lo que buscás o tenés alguna duda? <br/> Escribinos y te responderemos a la brevedad</p>
+      <div className="py-4 lg:py-16 w-[100%] text-center lg:text-left">
+        <h2 className="md:text-[2.5rem] xl:text-[3.5rem] text-[#5C3671] text-[1.5rem] font-[600] pb-4"> {isSpanish ? "Contactanos" : "Contact us"} </h2>
+        <p className="text-p mb-5 md:text-[1rem] lg:text-[1.1rem] xl:text-[1.3rem] lg:mb-16 text-gray-500 "> {isSpanish ? "¿No encontrás lo que buscás o tenés alguna duda?" : "Can't find what you are looking for?"}<br/> {isSpanish ? "Escribinos y te responderemos a la brevedad" : "Write us a message and we'll answer you shortly"} </p>
       </div>
       <div className="w-[100%]">
-        <form action="#" class="space-y-8">
+        <form action="#" className="space-y-8">
           <div>
-            <label for="name" class="block mb-2 text-p font-medium text-[#3C3B39] md:text-[1rem] lg:text-[1.1rem] xl:text-[1.3rem] ">Tu nombre</label>
-            <input type="text" id="name" class="shadow-sm bg-gray-50 border border-gray-300 text-[#3C3B39] text-p rounded-lg focus:ring-ring-color focus:border-secondary block w-full p-3.5 md:text-[1rem] lg:text-[1.1rem] xl:text-[1.3rem] font-light" placeholder="Pepe Argento" required />
-          </div>
-          <div>
-            <label for="email" class="block mb-2 text-p font-medium text-[#3C3B39] md:text-[1rem] lg:text-[1.1rem] xl:text-[1.3rem]">Tu email</label>
-            <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-[#3C3B39] text-p rounded-lg focus:ring-ring-color focus:border-secondary block w-full p-3.5 md:text-[1rem] lg:text-[1.1rem] xl:text-[1.3rem] font-light " placeholder="tunombre@gmail.com" required />
+            <label htmlFor="name" className="block mb-2 text-p font-medium text-[#3C3B39] md:text-[1rem] lg:text-[1.1rem] xl:text-[1.3rem] "> {isSpanish ? "Tu nombre" : "Your name"}</label>
+            <input type="text" id="name" className="shadow-sm bg-gray-50 border border-gray-300 text-[#3C3B39] text-p rounded-lg focus:ring-ring-color focus:border-secondary block w-full p-3.5 md:text-[1rem] lg:text-[1.1rem] xl:text-[1.3rem] font-light" placeholder="Pepe Argento" required />
           </div>
           <div>
-            <label for="subject" class="block mb-2 text-p font-medium text-[#3C3B39] md:text-[1rem] lg:text-[1.1rem] xl:text-[1.3rem]">Asunto</label>
-            <input type="text" id="subject" class="block p-3.5 w-full text-p  text-[#3C3B39] bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-ring-color focus:border-secondary md:text-[1rem] lg:text-[1.1rem] xl:text-[1.3rem] font-light" placeholder="¿En qué te podemos ayudar?" required />
+            <label htmlFor="email" className="block mb-2 text-p font-medium text-[#3C3B39] md:text-[1rem] lg:text-[1.1rem] xl:text-[1.3rem]">{isSpanish ? "Tu email" : "Your email"}</label>
+            <input type="email" id="email" className="shadow-sm bg-gray-50 border border-gray-300 text-[#3C3B39] text-p rounded-lg focus:ring-ring-color focus:border-secondary block w-full p-3.5 md:text-[1rem] lg:text-[1.1rem] xl:text-[1.3rem] font-light " placeholder= "tunombre@gmail.com" required />
           </div>
-          <div class="sm:col-span-2">
-            <label for="message" class="block mb-2 text-p font-medium text-[#3C3B39] md:text-[1rem] lg:text-[1.1rem] xl:text-[1.3rem]">Tu mensaje</label>
-            <textarea id="message" rows="6" class="block p-3.5 w-full text-p  text-[#3C3B39]  bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-ring-color focus:border-secondary md:text-[1rem] lg:text-[1.1rem] xl:text-[1.3rem] font-light" placeholder="Escribí tu mensaje"></textarea>
+         {/*  <div>
+            <label htmlFor="subject" className="block mb-2 text-p font-medium text-[#3C3B39] md:text-[1rem] lg:text-[1.1rem] xl:text-[1.3rem]">Asunto</label>
+            <input type="text" id="subject" className="block p-3.5 w-full text-p  text-[#3C3B39] bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-ring-color focus:border-secondary md:text-[1rem] lg:text-[1.1rem] xl:text-[1.3rem] font-light" placeholder= {isSpanish ? "¿En qué te podemos ayudar?" : "What can we do for you?"}  required />
+          </div> */}
+          <div className="sm:col-span-2">
+            <label htmlFor="message" className="block mb-2 text-p font-medium text-[#3C3B39] md:text-[1rem] lg:text-[1.1rem] xl:text-[1.3rem]">{isSpanish ? "Tu mensaje" : "Your message"}</label>
+            <textarea id="message" rows="6" className="block p-3.5 w-full text-p  text-[#3C3B39]  bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-ring-color focus:border-secondary md:text-[1rem] lg:text-[1.1rem] xl:text-[1.3rem] font-light" placeholder={isSpanish ? "Escribí tu mensaje" : "Write your message"} ></textarea>
           </div>
-          <button type="submit" class="py-3 px-5 font-medium text-center text-white rounded-lg bg-[#5B726C] sm:w-fit  focus:ring-4 focus:outline-none ">Enviar</button>
+          <button type="submit" className="py-3 px-5 font-medium text-center text-white rounded-lg bg-[#5B726C] sm:w-fit  focus:ring-4 focus:outline-none ">{isSpanish ? "Enviar" : "Send"} </button>
         </form>
       </div>
 
