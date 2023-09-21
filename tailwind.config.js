@@ -7,10 +7,10 @@ export default {
   theme: {
     extend: {
       borderColor: {
-        "secondary": "#5C3671",
+        "secondary": "#5B726C",
       },
       colors:{
-        'ring-color': "#5C3671",
+        'ring-color': "#5B726C",
       },
       fontFamily: {
         'Manrope': ['Manrope', 'sans-serif']

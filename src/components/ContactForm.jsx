@@ -74,11 +74,11 @@ const handleSubmit = async (e) => {
         <form action="#" className="space-y-8" onSubmit={handleSubmit}>
           <div>
             <label htmlFor="name" className="block mb-2 text-p font-medium text-[#3C3B39] md:text-[1rem] lg:text-[1.1rem] xl:text-[1.3rem] "> {isSpanish ? "Tu nombre" : "Your name"}</label>
-            <input type="text" id="name" className="shadow-sm bg-gray-50 border border-gray-300 text-[#3C3B39] text-p rounded-lg focus:ring-ring-color focus:border-secondary block w-full p-3.5 md:text-[1rem] lg:text-[1.1rem] xl:text-[1.3rem] font-light" placeholder="Jane Doe" value={formDetails.name} onChange={(e) => onFormUpdate('name', e.target.value)} required />
+            <input type="text" id="name" className="shadow-sm bg-gray-50 border border-gray-300 text-[#3C3B39] text-p rounded-lg focus:outline-none focus:border-2 focus:ring-ring-color focus:border-secondary block w-full p-3.5 md:text-[1rem] lg:text-[1.1rem] xl:text-[1.3rem] font-light" placeholder="Jane Doe" value={formDetails.name} onChange={(e) => onFormUpdate('name', e.target.value)} required />
           </div>
           <div>
             <label htmlFor="email" className="block mb-2 text-p font-medium text-[#3C3B39] md:text-[1rem] lg:text-[1.1rem] xl:text-[1.3rem]">{isSpanish ? "Tu email" : "Your email"}</label>
-            <input type="email" id="email" className="shadow-sm bg-gray-50 border border-gray-300 text-[#3C3B39] text-p rounded-lg focus:ring-ring-color focus:border-secondary block w-full p-3.5 md:text-[1rem] lg:text-[1.1rem] xl:text-[1.3rem] font-light " placeholder= "janedoe@gmail.com" value={formDetails.email} onChange={(e) => onFormUpdate('email', e.target.value)} required />
+            <input type="email" id="email" className="shadow-sm bg-gray-50 border border-gray-300 text-[#3C3B39] text-p rounded-lg focus:outline-none focus:border-2 focus:ring-ring-color focus:border-secondary block w-full p-3.5 md:text-[1rem] lg:text-[1.1rem] xl:text-[1.3rem] font-light " placeholder= "janedoe@gmail.com" value={formDetails.email} onChange={(e) => onFormUpdate('email', e.target.value)} required />
           </div>
          {/*  <div>
             <label htmlFor="subject" className="block mb-2 text-p font-medium text-[#3C3B39] md:text-[1rem] lg:text-[1.1rem] xl:text-[1.3rem]">Asunto</label>
@@ -86,9 +86,9 @@ const handleSubmit = async (e) => {
           </div> */}
           <div className="sm:col-span-2">
             <label htmlFor="message" className="block mb-2 text-p font-medium text-[#3C3B39] md:text-[1rem] lg:text-[1.1rem] xl:text-[1.3rem]">{isSpanish ? "Tu mensaje" : "Your message"}</label>
-            <textarea id="message" rows="6" className="block p-3.5 w-full text-p  text-[#3C3B39]  bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-ring-color focus:border-secondary md:text-[1rem] lg:text-[1.1rem] xl:text-[1.3rem] font-light" placeholder={isSpanish ? "Escribí tu mensaje" : "Write your message"}  value={formDetails.message} onChange={(e) => onFormUpdate('message', e.target.value)} ></textarea>
+            <textarea id="message" rows="6" className="block p-3.5 w-full text-p   text-[#3C3B39]  bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:outline-none focus:border-2 focus:ring-ring-color focus:border-secondary md:text-[1rem] lg:text-[1.1rem] xl:text-[1.3rem] font-light " placeholder={isSpanish ? "Escribí tu mensaje" : "Write your message"}  value={formDetails.message} onChange={(e) => onFormUpdate('message', e.target.value)} ></textarea>
           </div>
-          <button type="submit" className="py-3 px-5 font-medium text-center text-white rounded-lg bg-[#5B726C] sm:w-fit  focus:ring-4 focus:outline-none ">{buttonText} </button>
+          <button type="submit" className="py-3 px-5 font-medium text-center text-white rounded-lg bg-[#5B726C] sm:w-fit  focus:ring-4 focus:outline-none focus:ring-ring-color focus:ring-opacity-20 ">{buttonText} </button>
           {
                       status.message &&
                       <div>

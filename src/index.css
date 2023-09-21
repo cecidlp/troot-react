@@ -56,3 +56,12 @@ body {
 ul.text-p {
   list-style-type: disc; /* Cambia "disc" a "circle" u otro estilo de viñeta si lo prefieres */
 }
+
+.team-img{
+  transition:  .3s ease;
+}
+
+.team-img:hover {
+  scale: 1.02;
+}
+
