@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      transitionProperty:{
+        'top': 'top',
+      },
       borderColor: {
         "secondary": "#5B726C",
       },
