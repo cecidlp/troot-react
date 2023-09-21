@@ -56,7 +56,7 @@ const Navbar = () => {
                     </a>
                 </li>
                 <li className="px-6 py-6 border-b border-gray-400">
-                    <a href="/contacto" className="text-[#E5E2DB]">
+                    <a href="#contacto" className="text-[#E5E2DB]">
                     {isSpanish ? "Contacto" : "Contact"}
                     </a>
                 </li>
