@@ -19,8 +19,8 @@ function Servicios() {
         },
         {
             id: 3,
-            title: "Traducción técnico-científica",
-            textos: ["Páginas web, revistas, descripciones de productos, campañas publicitarias, entre otros."]
+            title: "Traducción técnico-científicas",
+            textos: ["Páginas web, revistas, descripciones de productos, campañas publicitarias, entre otras."]
         },
         {
             id: 4,
