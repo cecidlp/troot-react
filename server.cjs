@@ -29,6 +29,7 @@ contactEmail.verify((error) => {
 });
 
 router.post("/contact", (req, res) => {
+  console.log("Received a contact request");
   const name = req.body.name;
   const email = req.body.email;
   const message = req.body.message;
