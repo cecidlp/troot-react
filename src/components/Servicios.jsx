@@ -14,7 +14,7 @@ function Servicios() {
         {
             id: 2,
             title: "Traducciones con carácter público",
-            textos: ["Partidas de nacimiento y defunción, certificados de matrimonio, pasaportes, entre otros.", "Diplomas, certificados análiticos, entre otros.", "Documentos de economía y finanzas, entre otros.",]
+            textos: ["Partidas de nacimiento y defunción, certificados de matrimonio, pasaportes, diplomas, certificados analíticos, documentos de economía y finanzas, entre otros.",]
 
         },
         {
@@ -41,12 +41,12 @@ function Servicios() {
         {
             id: 1,
             title: "Legal Translations",
-            textos: ["Agreements, bylaws, articles of incorporation, complaints, orders, legal articles, deeds, notarially recorded instruments, wills, among others"]
+            textos: ["Agreements, bylaws, articles of incorporation, complaints, orders, legal articles, deeds, notarially recorded instruments, wills, among others."]
         },
         {
             id: 2,
             title: "Certified Translations",
-            textos: ["Birth certificates, death certificates, marriage licenses and certificates, passports, among others.", "Diplomas, academic transcripts, among others.", "Economy and finance documents.",]
+            textos: ["Birth certificates, death certificates, marriage licenses and certificates, passports, diplomas, academic transcripts, economy and finance documents, among others.",]
 
         },
         {
