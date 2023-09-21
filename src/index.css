@@ -4,45 +4,45 @@
 @tailwind utilities;
 
 :root {
-    --background: #F5F5F5;
-    --green: #5B726C;
-    --purple: #5C3671;
-    --text: #3C3B39;
-  }
-
-body {
-    background-color: var(--background);
-    font-family: 'Manrope', sans-serif;
+  --background: #F5F5F5;
+  --green: #5B726C;
+  --purple: #5C3671;
+  --text: #3C3B39;
 }
 
-.title-h1{
+body {
+  background-color: var(--background);
+  font-family: 'Manrope', sans-serif;
+}
+
+.title-h1 {
   color: var(--background);
   text-align: center;
   font-weight: 400;
   font-size: 1.8rem;
 }
 
-.p-hero{
+.p-hero {
   color: var(--background);
   text-align: center;
   font-size: 0.7rem;
 }
 
-.title-h2{
+.title-h2 {
   color: var(--purple);
   text-align: center;
   font-weight: 600;
   font-size: 1.5rem;
 }
 
-.title-h3{
+.title-h3 {
   color: var(--purple);
   text-align: center;
   font-weight: 600;
   font-size: 1.2rem;
 }
 
-.title-h4{
+.title-h4 {
   color: var(--purple);
   font-weight: 600;
   font-size: 1rem;
@@ -54,14 +54,22 @@ body {
 }
 
 ul.text-p {
-  list-style-type: disc; /* Cambia "disc" a "circle" u otro estilo de viñeta si lo prefieres */
+  list-style-type: disc;
 }
 
-.team-img{
-  transition:  .3s ease;
+.team-img {
+  transition: .3s ease;
 }
 
 .team-img:hover {
   scale: 1.02;
 }
 
+.smaller-height {
+  height: 3.5rem;
+  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    border-radius: 0px 0px 5px 5px;
+
+}
