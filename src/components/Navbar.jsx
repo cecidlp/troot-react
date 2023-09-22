@@ -5,36 +5,33 @@ import { useGlobalContext } from "../GlobalContextProvider";
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
+    const [scrollY, setScrollY] = useState(window.scrollY);
 
     const handleNav = () => {
         setNav(!nav);
     };
 
+    const handleScroll = () => {
+        setScrollY(window.scrollY);
+    };
+
     useEffect(() => {
-        const handleScroll = () => {
-            const scrollY = window.scrollY;
-            const navbar = document.getElementById("navbar");
-      
-            if (scrollY > 10) {
-              navbar.classList.add("fixed", "top-0", "left-0", "w-full", "smaller-height");
-            } else {
-              navbar.classList.remove("fixed", "top-0", "left-0", "w-full", "smaller-height");
-            }
-          };
-      
-          window.addEventListener("scroll", handleScroll);
-      
-          return () => {
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
             window.removeEventListener("scroll", handleScroll);
-          };
-        }, []);
+        };
+    }, []);
 
     const { isSpanish, handleChangeLanguage } = useGlobalContext();
 
 
 
     return (
-        <div className="bg-[#5B726C] flex justify-between items-center h-24 mx-auto px-6 w-[100%] lg:px-10 z-20" id="navbar">
+        <div className={
+            "bg-[#5B726C] flex justify-between items-center h-24 mx-auto px-6 w-[100%] lg:px-10 z-20" +
+            (scrollY > 10 ? " fixed top-0 left-0 w-full h-[3.5rem]" : "")
+        } >
             <h2 className="w-full text-2xl font-light text-[#E5E2DB]">Troot</h2>
             <ul className="hidden md:flex items-center">
                 <li className="p-4 pr-10">
@@ -80,7 +77,7 @@ const Navbar = () => {
                     </a>
                 </li>
                 <li className="px-6 py-6">
-                    <button onClick={() => {handleChangeLanguage(); handleNav();}}><TfiWorld fill="#E5E2DB" /></button>
+                    <button onClick={() => { handleChangeLanguage(); handleNav(); }}><TfiWorld fill="#E5E2DB" /></button>
                 </li>
             </ul>
         </div>
