@@ -45,7 +45,7 @@ const ContactForm = () => {
 const handleSubmit = async (e) => {
   e.preventDefault();
   setButtonText(text[isSpanish ? "spanish" : "english"].sending);
-  const url = "http://localhost:5000/contact";
+  const url = "https://fringe-clumsy-swing.glitch.me/contact";
   try {
       let response = await fetch(url, {
         method: "POST",
