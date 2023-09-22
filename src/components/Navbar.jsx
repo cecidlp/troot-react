@@ -65,22 +65,22 @@ const Navbar = () => {
                     <AiOutlineClose fill="#E5E2DB" size={20} />
                 </div>
                 <li className="px-6 py-6 border-b border-gray-400 font-weight: 400">
-                    <a href="#team" className="text-[#E5E2DB]">
+                    <a onClick={handleNav} href="#team" className="text-[#E5E2DB]">
                         {isSpanish ? "Equipo" : "Team"}
                     </a>
                 </li>
                 <li className="px-6 py-6 border-b border-gray-400">
-                    <a href="#servicios" className="text-[#E5E2DB]">
+                    <a onClick={handleNav} href="#servicios" className="text-[#E5E2DB]">
                         {isSpanish ? "Servicios" : "Services"}
                     </a>
                 </li>
                 <li className="px-6 py-6 border-b border-gray-400">
-                    <a href="#contacto" className="text-[#E5E2DB]">
+                    <a onClick={handleNav} href="#contacto" className="text-[#E5E2DB]">
                         {isSpanish ? "Contacto" : "Contact"}
                     </a>
                 </li>
                 <li className="px-6 py-6">
-                    <button onClick={handleChangeLanguage}><TfiWorld fill="#E5E2DB" /></button>
+                    <button onClick={() => {handleChangeLanguage(); handleNav();}}><TfiWorld fill="#E5E2DB" /></button>
                 </li>
             </ul>
         </div>
