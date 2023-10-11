@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { TfiWorld } from "react-icons/tfi";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { useGlobalContext } from "../GlobalContextProvider";
+import Logo from '../../public/logo_blanco.svg'
+
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
@@ -29,10 +31,10 @@ const Navbar = () => {
 
     return (
         <div className={
-            "bg-[#5B726C] flex justify-between items-center h-24 mx-auto px-6 w-[100%] lg:px-10 z-20" +
+            "bg-[#5B726C] flex justify-between items-center h-24 mx-auto px-6 w-[100%] lg:px-10 z-20 lg:h-16" +
             (scrollY > 10 ? " fixed top-0 left-0 w-full h-[3.5rem]" : "")
         } >
-            <h2 className="w-full text-2xl font-light text-[#E5E2DB]">Troot</h2>
+            <img src={Logo} alt="Troot logo" className="lg:w-56 w-28 md:w-40" />
             <ul className="hidden md:flex items-center">
                 <li className="p-4 pr-10">
                     <a href="#team" className="text-[#E5E2DB]">
