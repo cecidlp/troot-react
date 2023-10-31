@@ -59,8 +59,8 @@ const Navbar = () => {
                 {nav ? <AiOutlineClose fill="#E5E2DB" size={20} /> : <AiOutlineMenu fill="#E5E2DB" size={20} />}
             </div>
             <ul className={nav ? "shadow-2xl fixed left-0 top-0 pt-2 w-[100%] border-r rounded-b-[30px] border-none bg-[#5B726C] ease-in-out duration-500 z-20 " : "fixed top-[-100%] bg-[#5B726C]"}>
-                <div onClick={handleNav} className="flex items-center px-6">
-                    <h1 className="w-full text-2xl  py-6 font-light text-[#E5E2DB]">Troot</h1>
+                <div onClick={handleNav} className="flex justify-between items-center px-6">
+                <img src={Logo} alt="Troot logo" className="lg:w-56 w-36 md:w-40 right-7 relative" />
                     <AiOutlineClose fill="#E5E2DB" size={20} />
                 </div>
                 <li className="px-6 py-6 border-b border-gray-400 font-weight: 400">
